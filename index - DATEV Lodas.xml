@@ -1,0 +1,2109 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<!DOCTYPE DataSet SYSTEM "gdpdu-01-09-2004.dtd"[]>
+<DataSet>
+  <Version>2023.1</Version>
+  <DataSupplier>
+    <Name>DATEV eG</Name>
+    <Location>Paumgartnerstr. 6-14, 90329 Nürnberg</Location>
+    <Comment>Datenexport gemäß DLS, Lohn-Archiv 7.92</Comment>
+  </DataSupplier>
+  <Media>
+    <Name>Datenträger</Name>
+    <Table>
+      <URL>Arbeitgeberstammdaten.csv</URL>
+      <Name>Arbeitgeberstammdaten</Name>
+      <Description>Angaben zum Arbeitgeber</Description>
+      <DecimalSymbol>,</DecimalSymbol>
+      <DigitGroupingSymbol>.</DigitGroupingSymbol>
+      <VariableLength>
+        <VariableColumn>
+          <Name>AG_ST_Nr</Name>
+          <Description>Steuernummer des Arbeitgebers</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AG_Name</Name>
+          <Description>Name des Arbeitgebers</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AG_Strasse_Nr</Name>
+          <Description>Straße und Hausnummer des Arbeitgebers</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AG_Plz</Name>
+          <Description>PLZ  des Arbeitgebers</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AG_Ort</Name>
+          <Description>Ort des Arbeitgebers</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Org_Einh_1</Name>
+          <Description>Organisationseinheit</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Org_Einh_2</Name>
+          <Description>Unterorganisationseinheit</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Betr_FA_Name</Name>
+          <Description>Name des Betriebsstättenfinanzamts</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>BUFA_Nr_BFA</Name>
+          <Description>Bundesfinanzamtsnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+      </VariableLength>
+    </Table>
+    <Table>
+      <URL>Arbeitnehmerstammdaten.csv</URL>
+      <Name>Arbeitnehmerstammdaten</Name>
+      <Description>Angaben zum Arbeitnehmerstammdaten</Description>
+      <DecimalSymbol>,</DecimalSymbol>
+      <DigitGroupingSymbol>.</DigitGroupingSymbol>
+      <VariableLength>
+        <VariableColumn>
+          <Name>Abr_Jahr</Name>
+          <Description>Abrechnungsjahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Abr_Mon</Name>
+          <Description>Abrechnungsmonat</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Jahr</Name>
+          <Description>Anmeldungsjahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Ztr</Name>
+          <Description>Anmeldungszeitraum</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Aend_Zahl</Name>
+          <Description>Änderungszähler</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Pers_Nr</Name>
+          <Description>Personalnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>ID_Nr</Name>
+          <Description>Identifikationsnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_Vorname</Name>
+          <Description>Vorname des Arbeitnehmers</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_Nachname</Name>
+          <Description>Nachname des Arbeitnehmers</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_Geb_Name</Name>
+          <Description>Geburtsname des Arbeitnehmers</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_Titel</Name>
+          <Description>Titel des Arbeitnehmers</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_Strasse_Nr_HW</Name>
+          <Description>Straße und Hausnummer
+ des Arbeitnehmers</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_PLZ_HW</Name>
+          <Description>PLZ des Arbeitnehmers</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_Ort_HW</Name>
+          <Description>Ort des Arbeitnehmers</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_Land_HW</Name>
+          <Description>Land des Arbeitnehmers</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Geb_Dat</Name>
+          <Description>Geburtsdatum</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Geschl</Name>
+          <Description>Geschlecht</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_Bank</Name>
+          <Description>Kreditinstitut</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_BLZ</Name>
+          <Description>Bankleitzahl</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_Kto_Nr</Name>
+          <Description>Kontonummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Eintritt</Name>
+          <Description>Beschäftigungsbeginn</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Austritt</Name>
+          <Description>Beschäftigungsende</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Eintritt2</Name>
+          <Description>Wiedereintritt</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Austritt2</Name>
+          <Description>Wiederaustritt</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Eintritt_L</Name>
+          <Description>Letzter Wiedereintritt</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Austritt_L</Name>
+          <Description>Letzter Wiederaustritt</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>EKM_FWA</Name>
+          <Description>Entfernungskilometer</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>St_Kl</Name>
+          <Description>Steuerklasse</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_Konf</Name>
+          <Description>Konfession</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>EG_Konf</Name>
+          <Description>Konfession des Ehegatten</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KFB</Name>
+          <Description>Kinderfreibetrag</Description>
+          <Numeric>
+            <Accuracy>1</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Stpfl</Name>
+          <Description>Steuerpflicht</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>DBA</Name>
+          <Description>Doppelbesteuerungsabkommen</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>ATE</Name>
+          <Description>Auslandstätigkeitserlass</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Grenzg</Name>
+          <Description>Grenzgänger</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>JFB</Name>
+          <Description>Jahresfreibetrag</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>MFB</Name>
+          <Description>Monatsfreibetrag</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>HZB</Name>
+          <Description>Hinzurechnungsbetrag</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Tab</Name>
+          <Description>Steuertabelle</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>eTIN_Nr</Name>
+          <Description>Elektronische Transferidentifikationsnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Berufs_Bez</Name>
+          <Description>Berufsbezeichnung</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>IBAN</Name>
+          <Description>International Bankaccountnumber</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>BIC</Name>
+          <Description>Bankidentificationcode</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_Strasse_Nr_NW</Name>
+          <Description>Straße und Hausnummer
+ des Arbeitnehmers NW</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_Plz_NW</Name>
+          <Description>PLZ des Arbeitnehmers NW</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_Ort_NW</Name>
+          <Description>Ort des Arbeitnehmers NW</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AN_Land_NW</Name>
+          <Description>Land des Arbeitnehmers NW</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Gerf_Besch_2vH</Name>
+          <Description>Geringfügige Beschäftigung 2 v.H.</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Heuer_KZ</Name>
+          <Description>Heuerkennzeichen</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>ATZ_Beg</Name>
+          <Description>Altersteilzeit Beginn</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>ATZ_Ende</Name>
+          <Description>Altersteilzeit Ende</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Woech_Arbz</Name>
+          <Description>Wöchentliche Arbeitszeit</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AE_Betrag</Name>
+          <Description>Altersentlastungsbetrag</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>V_Empf_KZ</Name>
+          <Description>Versorgungsempfänger</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>V_Empf_Beg</Name>
+          <Description>Versorgungsbeginn</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>V_Empf_Ende</Name>
+          <Description>Versorgungsende</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>V_Empf_Jahr</Name>
+          <Description>Jahr des erstmaligen Versorgungsbeginns</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>V_Empf_B_M</Name>
+          <Description>Monat bei unterjährigem Versorgungsbeginn</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>V_Empf_E_M</Name>
+          <Description>Monat bei unterjährigem Versorgungsende</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>StKl_Faktor</Name>
+          <Description>Steuerklassenfaktor</Description>
+          <Numeric>
+            <Accuracy>3</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Werk_AN_Strasse_Nr</Name>
+          <Description>Straße und Hausnummer der Anschrift
+ des Beschäftigungsortes des AN</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Werk_AN_PLZ</Name>
+          <Description>PLZ der Anschrift des Beschäftigungsortes des AN</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Werk_AN_Ort</Name>
+          <Description>Ort der Anschrift des Beschäftigungsortes des AN</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Zuschl_PV_Ort</Name>
+          <Description>Zuschlag zur Pflegeversicherung
+ortsabhängig</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Zuschl_PV_Kind</Name>
+          <Description>Zuschlag zur Pflegeversicherung wegen
+ Kinderlosigkeit</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Aufst_RV</Name>
+          <Description>Aufstockung Rentenversicherungsbeitrag</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>ZB_ges_vH</Name>
+          <Description>Beitragssatz zum Zusatzbeitrag zur
+ gesetzlichen Krankenversicherung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>ELSTAM_Abruf</Name>
+          <Description>Abruf elektronischer Lohnsteuerabzugsmerkmale</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Werk_AN_Org</Name>
+          <Description>Organisationseinheit</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Werk_AN_U_Org</Name>
+          <Description>Unterorganisationseinheit</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+      </VariableLength>
+    </Table>
+    <Table>
+      <URL>Lohnartenabrechnungsdaten.csv</URL>
+      <Name>Lohnartenabrechnungsdaten</Name>
+      <Description>Lohnartenabrechnungsdaten</Description>
+      <DecimalSymbol>,</DecimalSymbol>
+      <DigitGroupingSymbol>.</DigitGroupingSymbol>
+      <VariableLength>
+        <VariableColumn>
+          <Name>Abr_Jahr</Name>
+          <Description>Abrechnungsjahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Abr_Mon</Name>
+          <Description>Abrechnungsmonat</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Jahr</Name>
+          <Description>Anmeldungsjahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Ztr</Name>
+          <Description>Anmeldungszeitraum</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Zahl_Datum</Name>
+          <Description>Tag der Lohnzahlung gem. § 4 Abs. 2 Nr. 1 und  Nr. 3  LStDV</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Aend_Zahl</Name>
+          <Description>Änderungszähler</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Abr_Zahl</Name>
+          <Description>Abrechnungszähler</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Pers_Nr</Name>
+          <Description>Personalnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>ID_Nr</Name>
+          <Description>Identifikationsnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>LA_Nr</Name>
+          <Description>Lohnartennummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>LA_Bez</Name>
+          <Description>Lohnartenbezeichnung</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>St_Schl</Name>
+          <Description>Steuerschlüssel</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Z_Einheit</Name>
+          <Description>Maßeinheit</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Z_Menge</Name>
+          <Description>Menge</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Z_Basis</Name>
+          <Description>Betrag pro Maßeinheit</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Z_Prozent</Name>
+          <Description>Umrechnungsfaktor</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Betrag</Name>
+          <Description>Betrag</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>PSt_Satz</Name>
+          <Description>Pauschalsteuersatz</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+      </VariableLength>
+    </Table>
+    <Table>
+      <URL>Lohnartenstammdaten.csv</URL>
+      <Name>Lohnartenstammdaten</Name>
+      <Description>Angaben zu den Lohnarten</Description>
+      <DecimalSymbol>,</DecimalSymbol>
+      <DigitGroupingSymbol>.</DigitGroupingSymbol>
+      <VariableLength>
+        <VariableColumn>
+          <Name>LA_Nr</Name>
+          <Description>Lohnartennummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>LA_Beginn</Name>
+          <Description>Gültigkeitsbeginn</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>LA_Ende</Name>
+          <Description>Gültigkeitsende</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>LA_Bez</Name>
+          <Description>Lohnartenbezeichnung</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>NBA_Schl</Name>
+          <Description>Nettobezug/Nettoabzug</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KZ_LSt_Anm</Name>
+          <Description>Kennzahl der LSt-Anmeldung</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Nr_e_LSt_Besch</Name>
+          <Description>Nr. der elektr. LSt-Bescheinigung</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Ges_Brutto</Name>
+          <Description>Im Gesamtbrutto enthalten?</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>St_Brutto</Name>
+          <Description>Im Steuerbrutto enthalten?</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Vers_bez</Name>
+          <Description>Versorgungsbezüge</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>P_So_Bez</Name>
+          <Description>Pauschalierung von sonstigen Bezügen
+ § 40 Abs. 1 EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Mahlz_Betr</Name>
+          <Description>Mahlzeiten im Betrieb § 40 Abs. 2 Satz 1 Nr.1 EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Mahlz_Dritter</Name>
+          <Description>Mahlzeiten außerhalb des Betriebs
+ § 40 Abs. 2 Satz 1 Nr. 1a EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Betr_Veranst</Name>
+          <Description>Betriebsveranstaltungen
+ § 40 Abs. 2 Satz 1 Nr. 2 EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Erhol_Beih</Name>
+          <Description>Erholungsbeihilfen
+ § 40 Abs. 2 Satz 1 Nr. 3 EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Verpfl_Kost</Name>
+          <Description>Vergütungen Verpflegungsmehraufwendungen § 40 Abs.2 Satz 1 Nr. 4 EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>PC_Zusch</Name>
+          <Description>Übereignung Datenverarbeitungsgeräte und Zuschüsse zur Internetnutzung § 40 Abs. 2 Satz 1 Nr. 5 EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>E_LadeVor</Name>
+          <Description>Übereignung/Zuschuss für Ladevorrichtungen § 40 Abs.2 Satz 1 Nr. 6 EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Fahrtk_Zusch</Name>
+          <Description>Fahrtkostenzuschüsse
+ § 40 Abs. 2 Satz 2 EStG Arbeitgeber</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>BAV_Kap</Name>
+          <Description>Beiträge zur betrieblichen Altersversorgung
+ § 3 Nr. 63  EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>BAV_Uml</Name>
+          <Description>Beiträge zur betrieblichen Altersversorgung
+ § 3 Nr. 56 EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>BAV</Name>
+          <Description>Beiträge zur betrieblichen Altersversorgung
+ § 40b Abs.1 EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>ZV_Uml</Name>
+          <Description>Umlage zu arbeitgeberfinanzierten ZVK
+ § 40b Abs.4 EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>GUV</Name>
+          <Description>Gruppenunfallversicherung
+ § 40bAbs. 3 EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>kfb_Aush</Name>
+          <Description>kurzfristig beschäftigte Aushilfskräfte
+ § 40aAbs. 1 EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Aush_LuF</Name>
+          <Description>Aushilfskräften in der Land- und Forstwirtschaft
+ § 40aAbs. 3  EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>gfb_Aush_2vH</Name>
+          <Description>Gering. Beschäftigte AN 2%
+ § 40aAbs. 2 EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>gfb_Aush_20vH</Name>
+          <Description>Gering. Beschäftigte AN 20%
+ § 40aAbs. 2a EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Sachpr_Kubi</Name>
+          <Description>Sachprämien / Kundenbindungsprogramme
+ §§ 3 Nr. 38, 37a EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>P_Sachzu</Name>
+          <Description>Pauschalierung bei Sachzuwendungen
+ § 37b  EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Abwaelz_PLSt</Name>
+          <Description>Abwälzung pauschale Lohnsteuer auf Arbeitnehmer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Nettozu</Name>
+          <Description>Nettolohnvereinbarung</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>GL_3b</Name>
+          <Description>Grundlohn nach § 3b EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>GLZ_3b</Name>
+          <Description>Grundlohnzusätze nach § 3b EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Entsch_Verl_AP</Name>
+          <Description>Entschädigung für den Verlust des Arbeitsplatzes</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>betr_F_Rad</Name>
+          <Description>Übereignung betriebliches Fahrrad</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>pausch_OEPNV</Name>
+          <Description>pauschal besteuerte Bezüge i. S. v. § 3 Nr. 15 EStG</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>SB_Bef_Whg_eT</Name>
+          <Description>Sachbezüge Beförderung Wohnung - erste Tätigkeitsstätte</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Zusch_Whg_eT</Name>
+          <Description>Zuschüsse zu Aufwendungen für Fahrten Wohnung - erste Tätigkeitsstätte</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>pausch_beschr_Stpfl</Name>
+          <Description>Pauschalierung für beschränkt steuerpflichtige Arbeitnehmer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>pausch_stfr_Grund</Name>
+          <Description>Rechtsgrundlage für die steuerliche Behandlung</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+      </VariableLength>
+    </Table>
+    <Table>
+      <URL>Lohnkontendaten.csv</URL>
+      <Name>Lohnkontendaten</Name>
+      <Description>Lohnkontendaten</Description>
+      <DecimalSymbol>,</DecimalSymbol>
+      <DigitGroupingSymbol>.</DigitGroupingSymbol>
+      <VariableLength>
+        <VariableColumn>
+          <Name>Abr_Jahr</Name>
+          <Description>Abrechnungsjahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Abr_Mon</Name>
+          <Description>Abrechnungsmonat</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Jahr</Name>
+          <Description>Anmeldungsjahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Ztr</Name>
+          <Description>Anmeldungszeitraum</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Zahl_Datum</Name>
+          <Description>Tag der Lohnzahlung gem. § 4 Abs. 2 Nr. 1 und  Nr. 3  LStDV</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Aend_Zahl</Name>
+          <Description>Änderungszähler</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Abr_Zahl</Name>
+          <Description>Abrechnungszähler</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Pers_Nr</Name>
+          <Description>Personalnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>ID_Nr</Name>
+          <Description>Identifikationsnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anz_U</Name>
+          <Description>Anzahl der Unterbrechungen</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>GB_S</Name>
+          <Description>sonstige Bezüge</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>GB_B</Name>
+          <Description>besondere LSt-Tabelle</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>GB_F</Name>
+          <Description>Sammelbeförderung</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>GB_FR</Name>
+          <Description>Französische Grenzgänger</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>GB_M</Name>
+          <Description>Gestellung von Mahlzeiten</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>GB</Name>
+          <Description>Großbuchstaben</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>St_Brutto</Name>
+          <Description>Steuerbrutto</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>LSt_nach_JA</Name>
+          <Description>Lohnsteuer nach Lohnsteuerjahresausgleich</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>SolZ</Name>
+          <Description>Solidaritätszuschlag</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KiSt_AN</Name>
+          <Description>Kirchensteuer des Arbeitnehmers</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KiSt_EG</Name>
+          <Description>Kirchensteuer des Ehegatten</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Vers_bez</Name>
+          <Description>Versorgungsbezug</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Vers_Bez_stbeg_mKj</Name>
+          <Description>steuerbegünstigte Versorgungsbezüge für mehrere Kalenderjahre</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>eb_AL_Ent</Name>
+          <Description>ermäßigt besteuerter Arbeitslohn für mehrere Kalenderjahre
+ und ermäßigt besteuerte Entschädigungen</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>LSt_eb_Bez</Name>
+          <Description>Lohnsteuer auf ermäßigt besteuerte Bezüge</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Solz_eb_Bez</Name>
+          <Description>Solidaritätszuschlag auf ermäßigt besteuerte Bezüge</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KiSt_AN_eb_Bez</Name>
+          <Description>Kirchensteuer des Arbeitnehmers auf ermäßigt besteuerte
+ Bezüge</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KiSt_EG_eb_Bez</Name>
+          <Description>Kirchensteuer des Ehegatten des Arbeitnehmers auf ermäßigt besteuerte
+ Bezüge</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>LoEL</Name>
+          <Description>bescheinigungspfllichtige Lohnersatzleistungen</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>stfr_AL_DBA</Name>
+          <Description>steuerfreier Arbeitslohn nach DBA</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>stfr_AL_ATE</Name>
+          <Description>steuerfreier Arbeitslohn nach ATE</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>stfr_AGL_FWA</Name>
+          <Description>steuerfreie Arbeitgeberleistungen, die auf die Entfernungspauschale anzurechnen sind bzw. bis 2019 für Fahrten zwischen Wohnung und erster Tätigkeitsstätte</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>p_AGL_FWA</Name>
+          <Description>pauschal besteuerte Arbeitgeberleistung
+ für Fahrten zwischen Wohnung und erster Tätigkeitsstätte</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>neb_AL_Ent</Name>
+          <Description>nicht ermäßigt besteuerter Arbeitslohn für mehrere Kalenderjahre
+      und nicht ermäßigt besteuerte Entschädigung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>stfr_VerpflZ_AuswT</Name>
+          <Description>steuerfreier Verpflegungszuschuss bei Auswärtstätigkeit</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>stfr_AGL_dHH</Name>
+          <Description>steuerfreie Arbeitgeberleistung für doppelte Haushaltsführung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>RV_AG_ges</Name>
+          <Description>Arbeitgeberanteil/-zuschuss zur gesetzlichen Rentenversicherung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>RV_AG_bst</Name>
+          <Description>Arbeitgeberanteil/-zuschuss an berufsständische Versorgungseinrichtungen</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>RV_AN_ges</Name>
+          <Description>Arbeitnehmeranteil zur gesetzlichen Rentenversicherung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>RV_AN_bst</Name>
+          <Description>Arbeitnehmeranteil an berufsständische Versorgungseinrichtungen</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KV_PV_AG</Name>
+          <Description>Steuerfreie Arbeitgeberzuschüsse zur Krankenversicherung
+ und Pflegeversicherung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>gKV_AG</Name>
+          <Description>Steuerfreie Arbeitgeberzuschüsse zur gesetzlichen Krankenversicherung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>pKV_AG</Name>
+          <Description>Steuerfreie Arbeitgeberzuschüsse zur privaten Krankenversicherung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>gPV_AG</Name>
+          <Description>Steuerfreie Arbeitgeberzuschüsse zur gesetzlichen Pflegeversicherung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KV_AN</Name>
+          <Description>Arbeitnehmerbeiträge zur gesetzlichen Krankenversicherung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>PV_AN</Name>
+          <Description>Arbeitnehmerbeiträge zur sozialen Pflegeversicherung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AV_AN</Name>
+          <Description>Arbeitnehmerbeiträge zur Arbeitslosenversicherung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>priv_KV_PV</Name>
+          <Description>Beiträge zur privaten Krankenversicherung
+ und Pflege-Pflichtversicherung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>BMG_VERSFB</Name>
+          <Description>Bemessungsgrundlage Versorgungsfreibetrag</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Sterb_Kap_Abf_NzVB</Name>
+          <Description>Sterbegeld, Kapitalauszahlungen/Abfindungen und
+ Nachzahlungen von Versorgungsbezügen</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KiGe</Name>
+          <Description>Kindergeld</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>FB_DBA_TR</Name>
+          <Description>Freibetrag DBA Türkei</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>BMG_p_St</Name>
+          <Description>BMG pauschale LSt ohne § 37b und Knappschaft</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>P_LSt</Name>
+          <Description>Pauschale LSt</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>P_SolZ</Name>
+          <Description>SolZ in den Fällen der Lohnsteuerpauschalierung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>P_KiSt</Name>
+          <Description>KiSt in den Fällen der Lohnsteuerpauschalierung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>BMG_p_St37b</Name>
+          <Description>BMG pauschale LSt nach § 37b</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>P_LSt_37b</Name>
+          <Description>Pauschale LSt § 37b</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>BMG_Knapp</Name>
+          <Description>BMG pauschale LSt Knappschaft</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>P_LSt_Knapp</Name>
+          <Description>Pauschale LSt Knappschaft</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>BMG_Kammer_HB</Name>
+          <Description>BMG Kammerbeitrag Bremen</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>BMG_Kammer_SL</Name>
+          <Description>BMG Kammerbeitrag Saarland</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Kammer_HB</Name>
+          <Description>Kammerbeitrag Bremen</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Kammer_SL</Name>
+          <Description>Kammerbeitrag Saarland</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>SV_AN</Name>
+          <Description>Arbeitnehmeranteil zur Gesamtsozialversicherung</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>St_Tage</Name>
+          <Description>Steuertage pro AN</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>LSt_vor_JA</Name>
+          <Description>Lohnsteuer vor Lohnsteuerjahresausgleich</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Ausz_Betr</Name>
+          <Description>Auszahlungsbetrag</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>BAV_Foerd</Name>
+          <Description>Förderbetrag zur betrieblichen Altersversorgung gem. § 100 EStG</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>BAV_Ref_2016</Name>
+          <Description>Referenzbetrag für den Förderbetrag zur betrieblichen Altersversorgung gem. § 100 Abs. 2 Satz 2 EStG - Jahresbetrag</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>VermBet_stfr</Name>
+          <Description>nicht zu besteuernder Vorteil gem. § 19a Abs.1 Satz 4 EStG</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>VermBet_stpfl</Name>
+          <Description>zu besteuernder Vorteil gem. § 19a Abs. 4 Satz 3 EStG</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+      </VariableLength>
+    </Table>
+    <Table>
+      <URL>Programminfo.csv</URL>
+      <Name>Programminfo</Name>
+      <Description>Informationen zum Softwareprogramm</Description>
+      <DecimalSymbol>,</DecimalSymbol>
+      <DigitGroupingSymbol>.</DigitGroupingSymbol>
+      <VariableLength>
+        <VariableColumn>
+          <Name>Softwarehersteller</Name>
+          <Description>Softwarehersteller</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Softwarebezeichnung</Name>
+          <Description>Name der Software</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Version</Name>
+          <Description>Versionsnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Branche</Name>
+          <Description>Anwendungsgebiet</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anschrift</Name>
+          <Description>Anschrift Hersteller</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Ort</Name>
+          <Description>Ort Hersteller</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Kontakt_Tel</Name>
+          <Description>Tel. Nr. des Supports</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Kontakt_eMail</Name>
+          <Description>E-Mail des Supports</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Hersteller_ID</Name>
+          <Description>Identifikationsnummer des Herstellers</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>DLS_Version</Name>
+          <Description>DLS-Version</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+      </VariableLength>
+    </Table>
+    <Table>
+      <URL>Sozialversicherungsdaten.csv</URL>
+      <Name>Sozialversicherungsdaten</Name>
+      <Description>Angaben zur Sozialversicherung</Description>
+      <DecimalSymbol>,</DecimalSymbol>
+      <DigitGroupingSymbol>.</DigitGroupingSymbol>
+      <VariableLength>
+        <VariableColumn>
+          <Name>Abr_Jahr</Name>
+          <Description>Abrechnungsjahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Abr_Mon</Name>
+          <Description>Abrechnungsmonat</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Jahr</Name>
+          <Description>Anmeldungsjahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Ztr</Name>
+          <Description>Anmeldungszeitraum</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Aend_Zahl</Name>
+          <Description>Änderungszähler</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Pers_Nr</Name>
+          <Description>Personalnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>ID_Nr</Name>
+          <Description>Identifikationsnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>SV_Nr</Name>
+          <Description>Sozialversicherungsnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>PGRS</Name>
+          <Description>Personengruppenschlüssel Sozialversicherung</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>BGRS</Name>
+          <Description>Beitragsgruppenschlüssel Sozialversicherung</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>TaetS</Name>
+          <Description>Tätigkeitsschlüssel Sozialversicherung</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Betr_Nr_UVT</Name>
+          <Description>Betriebsnummer des UV-Trägers</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Kassenbez</Name>
+          <Description>Bezeichnung der versichernden Krankenkasse</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Betr_Nr_KK</Name>
+          <Description>Betriebsnummer der Krankenkasse für die
+ Beitragsabführung</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Betr_Nr_AG</Name>
+          <Description>Betriebsnummer Arbeitgeber</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>SV_Tage</Name>
+          <Description>Anzahl der SV-Tage</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>StaatAngSchl</Name>
+          <Description>Staatsangehörigkeitsschlüssel</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+      </VariableLength>
+    </Table>
+    <Table>
+      <URL>Mandantendaten.Lohnsteueranmeldung.csv</URL>
+      <Name>Mandantendaten.Lohnsteueranmeldung</Name>
+      <Description>Mandantendaten.Lohnsteueranmeldung</Description>
+      <DecimalSymbol>,</DecimalSymbol>
+      <DigitGroupingSymbol>.</DigitGroupingSymbol>
+      <VariableLength>
+        <VariableColumn>
+          <Name>Anm_Jahr</Name>
+          <Description>Anmeldejahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Ztr</Name>
+          <Description>Anmeldezeitraum</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Kennung</Name>
+          <Description>Kennung</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Betrag</Name>
+          <Description>Betrag</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+      </VariableLength>
+    </Table>
+    <Table>
+      <URL>Mandantendaten.Unternehmensdaten.csv</URL>
+      <Name>Mandantendaten.Unternehmensdaten</Name>
+      <Description>Mandantendaten.Unternehmensdaten</Description>
+      <DecimalSymbol>,</DecimalSymbol>
+      <DigitGroupingSymbol>.</DigitGroupingSymbol>
+      <VariableLength>
+        <VariableColumn>
+          <Name>Art des Unternehmens Unternehmensgegenstand</Name>
+          <Description>Art des Unternehmes Unternehmensgegenstand</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Betriebsaufgabe</Name>
+          <Description>Betriebsaufgabe</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Gewerb.AÜ</Name>
+          <Description>Gewerb AÜ</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Länderschlüssel</Name>
+          <Description>Länderschlüssel</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Abweichender_Prozentsatz_für_pausch_LSt</Name>
+          <Description>Abweichender Prozentsatz für pausch LSt</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+      </VariableLength>
+    </Table>
+    <Table>
+      <URL>Mitarbeiterdaten.Arbeitszeiten - Unterbrechung.csv</URL>
+      <Name>Mitarbeiterdaten.Arbeitszeiten - Unterbrechung</Name>
+      <Description>Mitarbeiterdaten.Arbeitszeiten - Unterbrechung</Description>
+      <DecimalSymbol>,</DecimalSymbol>
+      <DigitGroupingSymbol>.</DigitGroupingSymbol>
+      <VariableLength>
+        <VariableColumn>
+          <Name>Abr_Jahr</Name>
+          <Description>Abrechnungsjahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Abr_Mon</Name>
+          <Description>Abrechnungsmonat</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Jahr</Name>
+          <Description>Anmeldejahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Ztr</Name>
+          <Description>Anmeldezeitraum</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Pers_Nr</Name>
+          <Description>Personalnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Unterbrechung_Anfang</Name>
+          <Description>Unterbrechung Anfang</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Unterbrechung_Ende</Name>
+          <Description>Unterbrechung Ende</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Ausfallschlüssel</Name>
+          <Description>Ausfallschlüssel</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+      </VariableLength>
+    </Table>
+    <Table>
+      <URL>Mitarbeiterdaten.Arbeitszeiten.csv</URL>
+      <Name>Mitarbeiterdaten.Arbeitszeiten</Name>
+      <Description>Mitarbeiterdaten.Arbeitszeiten</Description>
+      <DecimalSymbol>,</DecimalSymbol>
+      <DigitGroupingSymbol>.</DigitGroupingSymbol>
+      <VariableLength>
+        <VariableColumn>
+          <Name>Abr_Jahr</Name>
+          <Description>Abrechnungsjahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Abr_Mon</Name>
+          <Description>Abrechnungsmonat</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Jahr</Name>
+          <Description>Anmeldejahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Ztr</Name>
+          <Description>Anmeldezeitraum</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Pers_Nr</Name>
+          <Description>Personalnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Monatliche_Arbeitszeit</Name>
+          <Description>Monatliche Soll-Arbeitszeit Stunden</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Regelm_mtl_Arbeitszeit</Name>
+          <Description>Regelmäßige monatliche Arbeitszeit Stunden</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Tatsächl_mtl_Arbeitszeit</Name>
+          <Description>Regelmäßige monatliche Arbeitszeit Tage</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Montag_Stunden</Name>
+          <Description>Montag Stunden</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Dienstag_Stunden</Name>
+          <Description>Dienstag Stunden</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Mittwoch_Stunden</Name>
+          <Description>Mittwoch Stunden</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Donnerstag_Stunden</Name>
+          <Description>Donnerstag Stunden</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Freitag_Stunden</Name>
+          <Description>Freitag Stunden</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Samstag_Stunden</Name>
+          <Description>Samstag Stunden</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Sonntag_Stunden</Name>
+          <Description>Sonntag Stunden</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+      </VariableLength>
+    </Table>
+    <Table>
+      <URL>Mitarbeiterdaten.Firmenwagen.csv</URL>
+      <Name>Mitarbeiterdaten.Firmenwagen</Name>
+      <Description>Mitarbeiterdaten.Firmenwagen</Description>
+      <DecimalSymbol>,</DecimalSymbol>
+      <DigitGroupingSymbol>.</DigitGroupingSymbol>
+      <VariableLength>
+        <VariableColumn>
+          <Name>Abr_Jahr</Name>
+          <Description>Abrechnungsjahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Abr_Mon</Name>
+          <Description>Abrechnungsmonat</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Jahr</Name>
+          <Description>Anmeldejahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Ztr</Name>
+          <Description>Anmeldezeitraum</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Abrechnungszähler</Name>
+          <Description>Abrechnungszähler</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Pers_Nr</Name>
+          <Description>Personalnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Fahrzeugkennzeichen</Name>
+          <Description>Fahrzeugkennzeichen</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Bruttolistenpreis</Name>
+          <Description>Bruttolistenpreis</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Nutz_Ende</Name>
+          <Description>Nutzungsende</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Nutz_Haufigkeit</Name>
+          <Description>Nutzungshäufigkeit</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Privatfahrten_GeldwerterVorteil</Name>
+          <Description>Privatfahrten GeldwerterVorteil</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>FahrtenWohnungTaetigkeitsstaette_Entferungskilometer</Name>
+          <Description>Fahrten zwischen Wohung Tätigkeitsstätte Entfernungskilometer</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>FahrtenWohnungTaetigkeitsstaette_GeldwerterVorteil_stpfl</Name>
+          <Description>Fahrten zwischen Wohung Tätigkeitsstätte geldwerter Vorteil</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>FahrtenWohnungTaetigkeitsstaette_GeldwerterVorteil_pausch</Name>
+          <Description>Fahrten zwischen Wohung Tätigkeitsstätte pausch geldwerter Vorteil</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Famheimfahrten_Entferungskilometer</Name>
+          <Description>Famheimfahrten Entferungskilometer</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Famheimfahrten_AnzFahrten</Name>
+          <Description>Famheimfahrten Anzahl Fahrten</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Familienheimfahrten_Geldwerter_Vorteil</Name>
+          <Description>Familienheimfahrten geldwerter Vorteil</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+      </VariableLength>
+    </Table>
+    <Table>
+      <URL>Mitarbeiterdaten.Kinderverwaltung.csv</URL>
+      <Name>Mitarbeiterdaten.Kinderverwaltung</Name>
+      <Description>Mitarbeiterdaten.Kinderverwaltung</Description>
+      <DecimalSymbol>,</DecimalSymbol>
+      <DigitGroupingSymbol>.</DigitGroupingSymbol>
+      <VariableLength>
+        <VariableColumn>
+          <Name>Abr_Jahr</Name>
+          <Description>Abrechnungsjahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Abr_Mon</Name>
+          <Description>Abrechnungsmonat</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Jahr</Name>
+          <Description>Anmeldejahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Ztr</Name>
+          <Description>Anmeldezeitraum</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Pers_Nr</Name>
+          <Description>Personalnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Kindernummer</Name>
+          <Description>Kindernummer</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Familienname</Name>
+          <Description>Familienname</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Vorname</Name>
+          <Description>Vorname</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Geburtsdatum</Name>
+          <Description>Geburtsdatum</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Ende_des_Kindergeldanspruchs</Name>
+          <Description>Ende des Kindergeldanspruchs</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Kindergeldbezug</Name>
+          <Description>Kindergeldbezug</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Kinderanteil_Orts_Sozialzuschl</Name>
+          <Description>Kinderanteil Familien Orts Sozialzuschlag</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Kuerzungsbetrag_Kindergeld</Name>
+          <Description>Kuerzungsbetrag Kindergeld</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Berücksichtigungsgrund</Name>
+          <Description>Berücksichtigungsgrund</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Verlängerungstatbestand</Name>
+          <Description>Verlängerungstatbestand</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Pruefung_des_KG_Abr</Name>
+          <Description>Prüfung des Kindergeldanspruchs</Description>
+          <Date>
+            <Format>DD.MM.YYYY</Format>
+          </Date>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Relevanter_Erhoehungsbetrag</Name>
+          <Description>Relevanter Erhöhungsbetrag</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+      </VariableLength>
+    </Table>
+    <Table>
+      <URL>Mitarbeiterdaten.Sozialversicherung.csv</URL>
+      <Name>Mitarbeiterdaten.Sozialversicherung</Name>
+      <Description>Mitarbeiterdaten.Sozialversicherung</Description>
+      <DecimalSymbol>,</DecimalSymbol>
+      <DigitGroupingSymbol>.</DigitGroupingSymbol>
+      <VariableLength>
+        <VariableColumn>
+          <Name>Abr_Jahr</Name>
+          <Description>Abrechnungsjahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Abr_Mon</Name>
+          <Description>Abrechnungsmonat</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Jahr</Name>
+          <Description>Anmeldejahr</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Anm_Ztr</Name>
+          <Description>Anmeldezeitraum</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Abrechnungszähler</Name>
+          <Description>Abrechnungszähler</Description>
+          <Numeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Pers_Nr</Name>
+          <Description>Personalnummer</Description>
+          <AlphaNumeric />
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KV_Brutto</Name>
+          <Description>KV-pflichtiges Arbeitsentgelt - lfd. unter Berücksichtigung der BBG</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KV_Beitrag_AG</Name>
+          <Description>KV-Beitrag AG ohne KV-Zusatzbeitrag aus laufend gezahltem Arbeitsentgelt</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KV_Beitrag_AG_ZUS</Name>
+          <Description>KV-Zusatzbeitrag AG aus laufend gezahltem Arbeitsentgelt</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KV_Brutto_EBZ</Name>
+          <Description>KV-pflichtiges, einmalig gezahltes Arbeitsentgelt</Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KV_Beitrag_AG_EBZ</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KV_Beitrag_AG_EBZ_ZUS</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KV_Brutto_EBZ_Maekl</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>KV_Beitrag_AG_EBZ_Maekl</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>RV_Brutto</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>RV_Brutto_EBZ</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>RV_Beitrag_AG_EBZ</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>RV_Brutto_EBZ_Maekl</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>RV_Beitrag_AG_EBZ_Maekl</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AV_Brutto</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AV_Beitrag_AG</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AV_Brutto_EBZ</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AV_Beitrag_AG_EBZ</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AV_Brutto_EBZ_Maekl</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>AV_Beitrag_AG_EBZ_Maekl</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>PV_Brutto</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>PV_Beitrag_AG</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>PV_Brutto_EBZ</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>PV_Beitrag_AG_EBZ</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>PV_Brutto_EBZ_Maekl</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>PV_Beitrag_AG_EBZ_Maekl</Name>
+          <Description></Description>
+          <Numeric>
+            <Accuracy>2</Accuracy>
+          </Numeric>
+        </VariableColumn>
+        <VariableColumn>
+          <Name>Rechtskreis</Name>
+          <Description></Description>
+          <AlphaNumeric />
+        </VariableColumn>
+      </VariableLength>
+    </Table>
+  </Media>
+</DataSet>

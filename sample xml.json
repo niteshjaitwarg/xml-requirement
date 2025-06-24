@@ -1,0 +1,343 @@
+{
+    "xmlTemplate": {
+        "id": "e20d356e-4c5e-4ca1-8ab1-a9fec7f77a6f",
+        "name": "EMPLEADOS",
+        "attrs": [],
+        "value": "",
+        "child": [{
+                "id": "450b1e15-764b-434c-95a9-7a0528ffccf4",
+                "name": "EMPLEADO",
+                "attrs": [{
+                        "name": "NUMERO",
+                        "value": "{{066d6474-c267-4d54-bf9d-a911bd62a6d5}}"
+                    }, {
+                        "name": "TIPO",
+                        "value": "M"
+                    }
+                ],
+                "value": "",
+                "child": [{
+                        "id": "1adf2aa3-5d37-4057-946d-823e7a8a5a61",
+                        "type": "array",
+                        "name": "PROCESO",
+                        "attrs": [{
+                                "name": "PAC",
+                                "value": "{{f4cbbb16-0ee5-43aa-95c9-c4e9a5839791}}"
+                            }, {
+                                "name": "TT",
+                                "value": "MN"
+                            }, {
+                                "name": "PERIODO",
+                                "value": "{{d15ca0b4-ad64-4c7d-94aa-5c4cc1382c57}}"
+                            }
+                        ],
+                        "value": "",
+                        "child": []
+                    
+                    }, {
+                        "id": "0a0f4385-18a0-42fd-a9c6-c317383f47c6",
+                        "name": "SECCION",
+                        "type": "object",
+                        "attrs": [{
+                                "name": "ID",
+                                "value": "ADMGES"
+                            }
+                        ],
+                        "value": "",
+                        "child": [{
+                                "id": "e898ee3f-8e75-46f8-afd4-d45314b68fb6",
+                                "name": "CAMPO",
+                                "attrs": [{
+                                        "name": "ID",
+                                        "value": "ADG_DOECOD00"
+                                    }, {
+                                        "name": "SEC",
+                                        "value": ""
+                                    }, {
+                                        "name": "FECHA",
+                                        "value": ""
+                                    }
+                                ],
+                                "value": "{{02d2f7fe-a170-4c66-88d4-ef26dcae5e1d}}",
+                                "child": []
+                               
+                            }, {
+                                "id": "7bc2feae-c69f-404d-b092-fd7704bbaa4d",
+                                "name": "CAMPO",
+                                "attrs": [{
+                                        "name": "ID",
+                                        "value": "ADG_DOLIB05"
+                                    }, {
+                                        "name": "SEC",
+                                        "value": ""
+                                    }, {
+                                        "name": "FECHA",
+                                        "value": ""
+                                    }
+                                ],
+                                "value": "{{2524ad20-2842-42a0-af89-bec842b21a36}}",
+                                "child": []
+                               
+                            }
+                        ]
+                        
+                    }, {
+                        "id": "a568a668-421b-464c-8f48-48a50c9b92ff",
+                        "name": "SECCION",
+                        "attrs": [{
+                                "name": "ID",
+                                "value": "CONTRAT"
+                            }
+                        ],
+                        "value": "",
+                        "child": [{
+                                "id": "e9aa8500-28bc-4d5f-bfe3-1c2b2753d55d",
+                                "name": "CAMPO",
+                                "attrs": [{
+                                        "name": "ID",
+                                        "value": "CTR_MODCOD01"
+                                    }, {
+                                        "name": "SEC",
+                                        "value": ""
+                                    }, {
+                                        "name": "FECHA",
+                                        "value": "{{ce4b2b3a-1b19-4f85-a1d5-6198c1ec5461}}"
+                                    }
+                                ],
+                                "value": "{{24862686-004e-410d-a773-3395d2db01fa}}",
+                                "child": []
+                                
+                            }, {
+                                "id": "f9cd1d0a-6d62-4160-8946-cdb7ee04cd14",
+                                "name": "CAMPO",
+                                "attrs": [{
+                                        "name": "ID",
+                                        "value": "CTR_COLBONIF"
+                                    }, {
+                                        "name": "SEC",
+                                        "value": ""
+                                    }, {
+                                        "name": "FECHA",
+                                        "value": "{{ce4b2b3a-1b19-4f85-a1d5-6198c1ec5461}}"
+                                    }
+                                ],
+                                "value": "{{3247c2c5-d917-4c96-8882-bb05dd11e979}}",
+                                "child": []
+                               
+                            }, {
+                                "id": "1d6ba447-a459-4982-96fb-b072a3109272",
+                                "name": "CAMPO",
+                                "attrs": [{
+                                        "name": "ID",
+                                        "value": "CTR_CNCREN"
+                                    }, {
+                                        "name": "SEC",
+                                        "value": ""
+                                    }, {
+                                        "name": "FECHA",
+                                        "value": "{{ce4b2b3a-1b19-4f85-a1d5-6198c1ec5461}}"
+                                    }
+                                ],
+                                "value": "{{b61a22e1-253d-43c2-9b64-bf1fde42930d}}",
+                                "child": []
+                                
+                            }, {
+                                "id": "e22af529-d22b-4f24-af00-eb5496aa2673",
+                                "name": "CAMPO",
+                                "attrs": [{
+                                        "name": "ID",
+                                        "value": "CTR_MODCOD02"
+                                    }, {
+                                        "name": "SEC",
+                                        "value": ""
+                                    }, {
+                                        "name": "FECHA",
+                                        "value": "{{ce4b2b3a-1b19-4f85-a1d5-6198c1ec5461}}"
+                                    }
+                                ],
+                                "value": "{{232c02c6-9e07-4a9c-b3b7-36f5be31a0b7}}",
+                                "child": []
+                                
+                            }, {
+                                "id": "b1f4e328-2052-409c-9010-3933e2982f21",
+                                "name": "CAMPO",
+                                "attrs": [{
+                                        "name": "ID",
+                                        "value": "CTR_INTERINIDAD"
+                                    }, {
+                                        "name": "SEC",
+                                        "value": ""
+                                    }, {
+                                        "name": "FECHA",
+                                        "value": "{{ce4b2b3a-1b19-4f85-a1d5-6198c1ec5461}}"
+                                    }
+                                ],
+                                "value": "{{ff3a812e-fd6c-4229-bb1e-20a4a5f905ad}}",
+                                "child": []
+                               
+                            }, {
+                                "id": "866e2fdb-e80f-4b28-9041-2a3e4bbb808a",
+                                "name": "CAMPO",
+                                "attrs": [{
+                                        "name": "ID",
+                                        "value": "CTR_CNNAVE"
+                                    }, {
+                                        "name": "SEC",
+                                        "value": ""
+                                    }, {
+                                        "name": "FECHA",
+                                        "value": "{{ce4b2b3a-1b19-4f85-a1d5-6198c1ec5461}}"
+                                    }
+                                ],
+                                "value": "{{ee38e777-5362-4b45-8435-0b6979226a29}}",
+                                "child": []
+                               
+                            }, {
+                                "id": "62d01b95-db89-42d5-b706-2d7d6e84415b",
+                                "name": "CAMPO",
+                                "attrs": [{
+                                        "name": "ID",
+                                        "value": "CTR_DOCOD00"
+                                    }, {
+                                        "name": "SEC",
+                                        "value": ""
+                                    }, {
+                                        "name": "FECHA",
+                                        "value": "{{ce4b2b3a-1b19-4f85-a1d5-6198c1ec5461}}"
+                                    }
+                                ],
+                                "value": "{{a273387e-5721-427a-bc91-c9010cb11d06}}",
+                                "child": []
+                                
+                            }, {
+                                "id": "09d16c20-1b4a-4ad7-8bee-df27e18ca22a",
+                                "name": "CAMPO",
+                                "attrs": [{
+                                        "name": "ID",
+                                        "value": "CTR_CNLMCNT"
+                                    }, {
+                                        "name": "SEC",
+                                        "value": ""
+                                    }, {
+                                        "name": "FECHA",
+                                        "value": "{{ce4b2b3a-1b19-4f85-a1d5-6198c1ec5461}}"
+                                    }
+                                ],
+                                "value": "{{aa234f90-d2f4-419f-aa49-fdd1ab4f5960}}",
+                                "child": []
+                                
+                            }
+                        ]
+                       
+                    }, {
+                        "id": "d7f83202-cf93-4161-a468-81e19697af0e",
+                        "name": "SECCION",
+                        "attrs": [{
+                                "name": "ID",
+                                "value": "ETACIV"
+                            }
+                        ],
+                        "value": "",
+                        "child": [{
+                                "id": "3933ba82-28b9-4b80-bfc3-737a4eb5277c",
+                                "name": "CAMPO",
+                                "attrs": [{
+                                        "name": "ID",
+                                        "value": "ETA_ETCPRE"
+                                    }, {
+                                        "name": "SEC",
+                                        "value": ""
+                                    }, {
+                                        "name": "FECHA",
+                                        "value": ""
+                                    }
+                                ],
+                                "value": "{{4e8b2591-38ed-4341-b450-21337582ef37}}",
+                                "child": []
+                               
+                            }
+                        ]
+                       
+                    }, {
+                        "id": "423070ec-e5b4-4d0f-b4cb-379bacb0c102",
+                        "name": "SECCION",
+                        "attrs": [{
+                                "name": "ID",
+                                "value": "POSITP"
+                            }
+                        ],
+                        "value": "",
+                        "child": [{
+                                "id": "1096674b-7680-48a5-afd5-9ea63e917380",
+                                "name": "CAMPO",
+                                "attrs": [{
+                                        "name": "ID",
+                                        "value": "PTP_SPPOC103"
+                                    }, {
+                                        "name": "SEC",
+                                        "value": ""
+                                    }, {
+                                        "name": "FECHA",
+                                        "value": "{{ce4b2b3a-1b19-4f85-a1d5-6198c1ec5461}}"
+                                    }
+                                ],
+                                "value": "{{35ece0be-b125-4e24-b398-080f8d742ce8}}",
+                                "child": []
+                                
+                            }, {
+                                "id": "7ca19aa9-073b-403b-9638-f5f8270fcb9c",
+                                "name": "CAMPO",
+                                "attrs": [{
+                                        "name": "ID",
+                                        "value": "PTP_POCOEF"
+                                    }, {
+                                        "name": "SEC",
+                                        "value": ""
+                                    }, {
+                                        "name": "FECHA",
+                                        "value": "{{ce4b2b3a-1b19-4f85-a1d5-6198c1ec5461}}"
+                                    }
+                                ],
+                                "value": "{{d0d8e67b-0a1e-4631-8636-450197d72832}}",
+                                "child": []
+                                
+                            }
+                        ]
+                        
+                    }, {
+                        "id": "eb13fce9-7466-47a5-95b1-948917479eec",
+                        "name": "SECCION",
+                        "attrs": [{
+                                "name": "ID",
+                                "value": "MODPAI"
+                            }
+                        ],
+                        "value": "",
+                        "child": [{
+                                "id": "b8ebc113-a794-4bf4-90ad-f4a734117029",
+                                "name": "CAMPO",
+                                "attrs": [{
+                                        "name": "ID",
+                                        "value": "MPA_SPFPC1"
+                                    }, {
+                                        "name": "SEC",
+                                        "value": "1"
+                                    }, {
+                                        "name": "FECHA",
+                                        "value": ""
+                                    }
+                                ],
+                                "value": "{{4f3a06b4-804f-4acb-b373-03abced52a80}}",
+                                "child": []
+                                
+                            }
+                        ]
+                        
+                    }
+                ]
+               
+            }
+        ]
+        
+    }
+}
